@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Electric Rosary </title>
+</head>
+<body>
+    <div class="counter">
+        
+        <h1> *المسبحة الإلكترونية* </h1>
+        <h2> واذكر ربك اذا نسيت </h2>
+    </div>
+
+
+    <ul>
+        <li>
+            *  سبحان الله *
+            <br/>
+            *   الحمد لله *
+            <br/>
+            *  لا إله إلا الله *
+            <br/>
+            * الله أكبر * 
+            <br/>
+            * لا حول ولاقوة إلا بالله *
+            <br/>
+            *  اللهم صل علي سيدنا محمد وعلي آله وصحبه اجمعين*
+            <br/>
+            * استغفر الله العظيم الذي لا إله إلا هو الحي القيوم وأتوب إليه*
+            <br/>
+        </li>
+
+    </ul>
+
+    <div class="d1" id="d1">  <!-- d1 => clock structure -->
+        <div class="d2" id="d2">0</div>
+        <div class="d3" id="d3" onclick="reset()"></div> 
+        <div class="d4" id="d4" onclick="add()"></div>
+    </div>
+
+    <div class="color">
+        <div class="c1" onclick="c1()" id="c1"></div>
+        <div class="c2" onclick="c2()" id="c2"></div>
+        <div class="c3" onclick="c3()" id="c3"></div>
+        <div class="c4" onclick="c4()" id="c4"></div>
+        <div class="c5" onclick="c5()" id="c5"></div>
+        <div class="c6" onclick="c6()" id="c6"></div>
+        <div class="c7" onclick="c7()" id="c7"></div>
+        <div class="c8" onclick="c8()" id="c8"></div>
+
+    </div>
+
+    <div class="name"> <h2> By: Eng. Ahmed Elnemr <h2> </div>
+
+    <script>
+        var x = document.getElementById("d2");  // d2 => 0
+        var y = document.getElementById("d3");  // d3 => reset
+        var z = document.getElementById("d4");  // d4 => add
+
+        function add(){
+            x.innerHTML = ++x.innerHTML;
+        }
+
+        function reset(){
+            x.innerHTML = 0;
+        }
+
+        var d1 = document.getElementById("d1");
+
+        function c1()
+        {
+            d1.style.background="blue";
+        }
+
+        function c2()
+        {
+            d1.style.background="black";
+        }
+
+        function c3()
+        {
+            d1.style.background="red";
+        }
+
+        function c4()
+        {
+            d1.style.background="green";
+        }
+
+        function c5()
+        {
+            d1.style.background="yellow";
+        }
+
+        function c6()
+        {
+            d1.style.background="brown";
+        }
+
+        function c7()
+        {
+            d1.style.background="purple";
+        }
+
+        function c8()
+        {
+            d1.style.background="aqua";
+        }
+
+
+    </script>
+    
+</body>
+</html>
